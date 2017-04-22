@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E56E49CB1EAC021A005ED275 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E56E49CA1EAC021A005ED275 /* Assets.xcassets */; };
 		E5C17AF71EABEC3700E1A37B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C17AF61EABEC3700E1A37B /* AppDelegate.swift */; };
 		E5C17AF91EABEC3700E1A37B /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C17AF81EABEC3700E1A37B /* SignInViewController.swift */; };
 		E5C17AFC1EABEC3700E1A37B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5C17AFA1EABEC3700E1A37B /* Main.storyboard */; };
-		E5C17AFE1EABEC3700E1A37B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5C17AFD1EABEC3700E1A37B /* Assets.xcassets */; };
 		E5C17B011EABEC3700E1A37B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5C17AFF1EABEC3700E1A37B /* LaunchScreen.storyboard */; };
 		E5C17B091EABED7600E1A37B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5C17B081EABED7600E1A37B /* GoogleService-Info.plist */; };
 		EC9335867C0CA3D40729B9C3 /* Pods_music_social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E54F7653B025E4F687712DA /* Pods_music_social.framework */; };
@@ -19,11 +19,11 @@
 /* Begin PBXFileReference section */
 		3E54F7653B025E4F687712DA /* Pods_music_social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_music_social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BCB2EF1B9423E762D667D04 /* Pods-music-social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-music-social.release.xcconfig"; path = "Pods/Target Support Files/Pods-music-social/Pods-music-social.release.xcconfig"; sourceTree = "<group>"; };
+		E56E49CA1EAC021A005ED275 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5C17AF31EABEC3700E1A37B /* music-social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "music-social.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5C17AF61EABEC3700E1A37B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5C17AF81EABEC3700E1A37B /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		E5C17AFB1EABEC3700E1A37B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E5C17AFD1EABEC3700E1A37B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5C17B001EABEC3700E1A37B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5C17B021EABEC3700E1A37B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5C17B081EABED7600E1A37B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -107,10 +107,10 @@
 				E56E49C71EABF0AD005ED275 /* Model */,
 				E5C17AF61EABEC3700E1A37B /* AppDelegate.swift */,
 				E5C17AFA1EABEC3700E1A37B /* Main.storyboard */,
-				E5C17AFD1EABEC3700E1A37B /* Assets.xcassets */,
 				E5C17AFF1EABEC3700E1A37B /* LaunchScreen.storyboard */,
 				E5C17B021EABEC3700E1A37B /* Info.plist */,
 				E5C17B081EABED7600E1A37B /* GoogleService-Info.plist */,
+				E56E49CA1EAC021A005ED275 /* Assets.xcassets */,
 			);
 			path = "music-social";
 			sourceTree = "<group>";
@@ -179,8 +179,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5C17B011EABEC3700E1A37B /* LaunchScreen.storyboard in Resources */,
-				E5C17AFE1EABEC3700E1A37B /* Assets.xcassets in Resources */,
 				E5C17B091EABED7600E1A37B /* GoogleService-Info.plist in Resources */,
+				E56E49CB1EAC021A005ED275 /* Assets.xcassets in Resources */,
 				E5C17AFC1EABEC3700E1A37B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
