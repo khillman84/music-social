@@ -1,0 +1,417 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E5C17AF71EABEC3700E1A37B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C17AF61EABEC3700E1A37B /* AppDelegate.swift */; };
+		E5C17AF91EABEC3700E1A37B /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C17AF81EABEC3700E1A37B /* SignInViewController.swift */; };
+		E5C17AFC1EABEC3700E1A37B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5C17AFA1EABEC3700E1A37B /* Main.storyboard */; };
+		E5C17AFE1EABEC3700E1A37B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5C17AFD1EABEC3700E1A37B /* Assets.xcassets */; };
+		E5C17B011EABEC3700E1A37B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5C17AFF1EABEC3700E1A37B /* LaunchScreen.storyboard */; };
+		E5C17B091EABED7600E1A37B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5C17B081EABED7600E1A37B /* GoogleService-Info.plist */; };
+		EC9335867C0CA3D40729B9C3 /* Pods_music_social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E54F7653B025E4F687712DA /* Pods_music_social.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3E54F7653B025E4F687712DA /* Pods_music_social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_music_social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BCB2EF1B9423E762D667D04 /* Pods-music-social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-music-social.release.xcconfig"; path = "Pods/Target Support Files/Pods-music-social/Pods-music-social.release.xcconfig"; sourceTree = "<group>"; };
+		E5C17AF31EABEC3700E1A37B /* music-social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "music-social.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5C17AF61EABEC3700E1A37B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E5C17AF81EABEC3700E1A37B /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		E5C17AFB1EABEC3700E1A37B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E5C17AFD1EABEC3700E1A37B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E5C17B001EABEC3700E1A37B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E5C17B021EABEC3700E1A37B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5C17B081EABED7600E1A37B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ED4A544A792EE9ABE123B4E1 /* Pods-music-social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-music-social.debug.xcconfig"; path = "Pods/Target Support Files/Pods-music-social/Pods-music-social.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E5C17AF01EABEC3700E1A37B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC9335867C0CA3D40729B9C3 /* Pods_music_social.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07C1E5247BD8900934128583 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED4A544A792EE9ABE123B4E1 /* Pods-music-social.debug.xcconfig */,
+				5BCB2EF1B9423E762D667D04 /* Pods-music-social.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D8226978DA4C95370A1A3228 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E54F7653B025E4F687712DA /* Pods_music_social.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E56E49C71EABF0AD005ED275 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E56E49C81EABF0B4005ED275 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E56E49C91EABF0BC005ED275 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E5C17AF81EABEC3700E1A37B /* SignInViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E5C17AEA1EABEC3700E1A37B = {
+			isa = PBXGroup;
+			children = (
+				E5C17AF51EABEC3700E1A37B /* music-social */,
+				E5C17AF41EABEC3700E1A37B /* Products */,
+				07C1E5247BD8900934128583 /* Pods */,
+				D8226978DA4C95370A1A3228 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E5C17AF41EABEC3700E1A37B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E5C17AF31EABEC3700E1A37B /* music-social.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E5C17AF51EABEC3700E1A37B /* music-social */ = {
+			isa = PBXGroup;
+			children = (
+				E56E49C91EABF0BC005ED275 /* Controller */,
+				E56E49C81EABF0B4005ED275 /* View */,
+				E56E49C71EABF0AD005ED275 /* Model */,
+				E5C17AF61EABEC3700E1A37B /* AppDelegate.swift */,
+				E5C17AFA1EABEC3700E1A37B /* Main.storyboard */,
+				E5C17AFD1EABEC3700E1A37B /* Assets.xcassets */,
+				E5C17AFF1EABEC3700E1A37B /* LaunchScreen.storyboard */,
+				E5C17B021EABEC3700E1A37B /* Info.plist */,
+				E5C17B081EABED7600E1A37B /* GoogleService-Info.plist */,
+			);
+			path = "music-social";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E5C17AF21EABEC3700E1A37B /* music-social */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5C17B051EABEC3700E1A37B /* Build configuration list for PBXNativeTarget "music-social" */;
+			buildPhases = (
+				2430253D380A45CA6FB5994F /* [CP] Check Pods Manifest.lock */,
+				E5C17AEF1EABEC3700E1A37B /* Sources */,
+				E5C17AF01EABEC3700E1A37B /* Frameworks */,
+				E5C17AF11EABEC3700E1A37B /* Resources */,
+				CE927FEB89854476B651DEF2 /* [CP] Embed Pods Frameworks */,
+				9C3396F81CB2B901CB573B00 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "music-social";
+			productName = "music-social";
+			productReference = E5C17AF31EABEC3700E1A37B /* music-social.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E5C17AEB1EABEC3700E1A37B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Kyle Hillman";
+				TargetAttributes = {
+					E5C17AF21EABEC3700E1A37B = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 6ZL2QC28LX;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E5C17AEE1EABEC3700E1A37B /* Build configuration list for PBXProject "music-social" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E5C17AEA1EABEC3700E1A37B;
+			productRefGroup = E5C17AF41EABEC3700E1A37B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E5C17AF21EABEC3700E1A37B /* music-social */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E5C17AF11EABEC3700E1A37B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5C17B011EABEC3700E1A37B /* LaunchScreen.storyboard in Resources */,
+				E5C17AFE1EABEC3700E1A37B /* Assets.xcassets in Resources */,
+				E5C17B091EABED7600E1A37B /* GoogleService-Info.plist in Resources */,
+				E5C17AFC1EABEC3700E1A37B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2430253D380A45CA6FB5994F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9C3396F81CB2B901CB573B00 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-music-social/Pods-music-social-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE927FEB89854476B651DEF2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-music-social/Pods-music-social-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E5C17AEF1EABEC3700E1A37B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5C17AF91EABEC3700E1A37B /* SignInViewController.swift in Sources */,
+				E5C17AF71EABEC3700E1A37B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E5C17AFA1EABEC3700E1A37B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5C17AFB1EABEC3700E1A37B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E5C17AFF1EABEC3700E1A37B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5C17B001EABEC3700E1A37B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E5C17B031EABEC3700E1A37B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E5C17B041EABEC3700E1A37B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E5C17B061EABEC3700E1A37B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED4A544A792EE9ABE123B4E1 /* Pods-music-social.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6ZL2QC28LX;
+				INFOPLIST_FILE = "music-social/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "kylehillman.music-social";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E5C17B071EABEC3700E1A37B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BCB2EF1B9423E762D667D04 /* Pods-music-social.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6ZL2QC28LX;
+				INFOPLIST_FILE = "music-social/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "kylehillman.music-social";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E5C17AEE1EABEC3700E1A37B /* Build configuration list for PBXProject "music-social" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5C17B031EABEC3700E1A37B /* Debug */,
+				E5C17B041EABEC3700E1A37B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5C17B051EABEC3700E1A37B /* Build configuration list for PBXNativeTarget "music-social" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5C17B061EABEC3700E1A37B /* Debug */,
+				E5C17B071EABEC3700E1A37B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E5C17AEB1EABEC3700E1A37B /* Project object */;
+}

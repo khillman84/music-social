@@ -1,0 +1,6 @@
+framework module Pods_music_social {
+  umbrella header "Pods-music-social-umbrella.h"
+
+  export *
+  module * { export * }
+}
