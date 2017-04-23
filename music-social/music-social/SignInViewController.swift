@@ -13,6 +13,9 @@ import FBSDKLoginKit
 
 class SignInViewController: UIViewController {
 
+    @IBOutlet weak var emailField: FancyTextField!
+    @IBOutlet weak var passwordField: FancyTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -42,9 +45,9 @@ class SignInViewController: UIViewController {
         
     }
     
+    // Pass in Facebook credential to authenticate with Firebase
     func firebaseAuthentication(_ credential: FIRAuthCredential) {
         
-        // Checks Firebase authentication
         FIRAuth.auth()?.signIn(with: credential, completion: { (user, error) in
             if error != nil {
                 print("Unable to login with Firebase")
@@ -54,5 +57,24 @@ class SignInViewController: UIViewController {
         })
     }
 
+    @IBAction func signInPressed(_ sender: Any) {
+        
+        // Sign in with a users email and password through Firebase
+        if let email = emailField.text, let password = passwordField.text {
+            FIRAuth.auth()?.signIn(withEmail: password, password: email, completion: { (user, error) in
+                if error == nil {
+                    print("User authenticated with email")
+                } else {
+                    FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
+                        if error != nil {
+                            print("Unable to authenticate with Firebase using email")
+                        } else {
+                            print("Successfully authenticated with Firebase")
+                        }
+                    })
+                }
+            })
+        }
+    }
 }
 
