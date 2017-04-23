@@ -1,4 +1,22 @@
 PODS:
+  - Bolts (1.8.4):
+    - Bolts/AppLinks (= 1.8.4)
+    - Bolts/Tasks (= 1.8.4)
+  - Bolts/AppLinks (1.8.4):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.8.4)
+  - FacebookCore (0.2.0):
+    - Bolts (~> 1.8)
+    - FBSDKCoreKit (~> 4.15)
+  - FacebookLogin (0.2.0):
+    - Bolts (~> 1.8)
+    - FacebookCore (~> 0.2)
+    - FBSDKCoreKit (~> 4.15)
+    - FBSDKLoginKit (~> 4.15)
+  - FBSDKCoreKit (4.22.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.22.0):
+    - FBSDKCoreKit
   - Firebase/Auth (3.16.0):
     - Firebase/Core
     - FirebaseAuth (= 3.1.1)
@@ -41,12 +59,19 @@ PODS:
   - GTMSessionFetcher/Core (1.1.9)
 
 DEPENDENCIES:
+  - FacebookLogin
+  - FBSDKLoginKit
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
   - Firebase/Storage
 
 SPEC CHECKSUMS:
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  FacebookCore: 2cb3f0fbff218e9d3119cec84bae983b232412de
+  FacebookLogin: c9d606504735780a9e3002465a615512e0a691a5
+  FBSDKCoreKit: c693bad19feb225469eeff14452ba364522ee48b
+  FBSDKLoginKit: 1fa529fc622d7b32ebeaffbecd377180833c6d30
   Firebase: 21bf4a89d3f01bfbe11adc3a5d934a4a3d3a5fd6
   FirebaseAnalytics: 920e46455f27b0a52a80907a6d9b73ee4bd1c635
   FirebaseAuth: cc8a1824170adbd351edb7f994490a3fb5c18be6
@@ -57,6 +82,6 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMSessionFetcher: 5c046c76a1f859bc9c187e918f18e4fc7bb57b5e
 
-PODFILE CHECKSUM: c73640ff799de0a246c379e1d44c766df6c563f2
+PODFILE CHECKSUM: f841db58148f2464bfe6e0695c743c54560eeddf
 
 COCOAPODS: 1.2.1
