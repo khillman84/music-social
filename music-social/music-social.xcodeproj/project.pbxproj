@@ -18,6 +18,7 @@
 		E5C17AFC1EABEC3700E1A37B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5C17AFA1EABEC3700E1A37B /* Main.storyboard */; };
 		E5C17B011EABEC3700E1A37B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5C17AFF1EABEC3700E1A37B /* LaunchScreen.storyboard */; };
 		E5C17B091EABED7600E1A37B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5C17B081EABED7600E1A37B /* GoogleService-Info.plist */; };
+		E5ECE8A91EAD462F009200CB /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5ECE8A81EAD462F009200CB /* FeedViewController.swift */; };
 		EC9335867C0CA3D40729B9C3 /* Pods_music_social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E54F7653B025E4F687712DA /* Pods_music_social.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		E5C17B001EABEC3700E1A37B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5C17B021EABEC3700E1A37B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5C17B081EABED7600E1A37B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E5ECE8A81EAD462F009200CB /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		ED4A544A792EE9ABE123B4E1 /* Pods-music-social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-music-social.debug.xcconfig"; path = "Pods/Target Support Files/Pods-music-social/Pods-music-social.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				E5C17AF81EABEC3700E1A37B /* SignInViewController.swift */,
+				E5ECE8A81EAD462F009200CB /* FeedViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				E56E49D61EAC1E73005ED275 /* FancyButton.swift in Sources */,
 				E56E49D41EAC1C57005ED275 /* FancyTextField.swift in Sources */,
 				E56E49CD1EAC16DB005ED275 /* FancyView.swift in Sources */,
+				E5ECE8A91EAD462F009200CB /* FeedViewController.swift in Sources */,
 				E56E49D01EAC17B2005ED275 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
