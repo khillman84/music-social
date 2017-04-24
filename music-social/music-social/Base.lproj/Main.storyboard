@@ -204,7 +204,7 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="ahX-BF-uQQ" firstAttribute="leading" secondItem="bpD-KR-seK" secondAttribute="leading" constant="8" id="AQ4-3L-WTl"/>
                                     <constraint firstAttribute="bottom" secondItem="ahX-BF-uQQ" secondAttribute="bottom" constant="8" id="RyD-Vu-fF5"/>
@@ -213,15 +213,15 @@
                                     <constraint firstItem="ahX-BF-uQQ" firstAttribute="top" secondItem="bpD-KR-seK" secondAttribute="top" constant="8" id="z3B-vs-0Av"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="348" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YSQ-Xe-cPz">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="348" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YSQ-Xe-cPz">
                                 <rect key="frame" x="0.0" y="162" width="375" height="505"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="348" id="CZK-GK-gl6">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="348" id="CZK-GK-gl6" customClass="PostCell" customModule="music_social" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="348"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CZK-GK-gl6" id="T2z-4t-8Th">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="347.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="348"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xk3-8h-JsY" customClass="FancyView" customModule="music_social" customModuleProvider="target">
@@ -246,7 +246,7 @@
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
-                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty-heart" translatesAutoresizingMaskIntoConstraints="NO" id="rOi-H1-Aeg" customClass="CircleView" customModule="music_social" customModuleProvider="target">
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty-heart" translatesAutoresizingMaskIntoConstraints="NO" id="rOi-H1-Aeg">
                                                                             <rect key="frame" x="267" y="0.0" width="60" height="60"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="60" id="1HY-D2-mIM"/>
@@ -261,6 +261,9 @@
                                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7WZ-6y-uOe">
                                                                     <rect key="frame" x="0.0" y="221" width="327" height="66"/>
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="66" id="8UZ-0z-ggF"/>
+                                                                    </constraints>
                                                                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -303,11 +306,19 @@
                                                 <constraint firstItem="xk3-8h-JsY" firstAttribute="leading" secondItem="T2z-4t-8Th" secondAttribute="leading" constant="16" id="uOc-cu-mRS"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="caption" destination="7WZ-6y-uOe" id="I5s-m9-Ahy"/>
+                                            <outlet property="likesLabel" destination="cU3-Fb-aIO" id="h7Z-sH-dmb"/>
+                                            <outlet property="postImg" destination="TFX-RL-Rjn" id="pAy-9u-wgI"/>
+                                            <outlet property="profileImg" destination="fRi-jy-rq6" id="SnE-0h-Rxh"/>
+                                            <outlet property="usernameLabel" destination="vky-4T-FmF" id="oqo-6N-ELL"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="bpD-KR-seK" firstAttribute="top" secondItem="rfc-qO-YUL" secondAttribute="bottom" constant="16" id="4nW-d2-lqm"/>
                             <constraint firstItem="rfc-qO-YUL" firstAttribute="leading" secondItem="O2h-tB-qT9" secondAttribute="leading" id="7Ac-zi-Sd6"/>
@@ -322,6 +333,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="tableView" destination="YSQ-Xe-cPz" id="CGW-t1-xBG"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="21N-wW-aDi"/>
                     </connections>
                 </viewController>
