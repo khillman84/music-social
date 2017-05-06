@@ -20,6 +20,9 @@ class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDe
         tableView.dataSource = self
         tableView.delegate = self
        
+        DataService.dataService.ref_posts.observe(.value, with: { (snapshot) in
+            print(snapshot.value)
+        })
     }
 
     @IBAction func signOutPressed(_ sender: Any) {
