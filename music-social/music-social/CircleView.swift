@@ -14,5 +14,6 @@ class CircleView: UIImageView {
         
         //Turn FB button into circle once size has been determined
         layer.cornerRadius = self.frame.width / 2
+        clipsToBounds = true
     }
 }
