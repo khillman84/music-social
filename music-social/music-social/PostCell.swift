@@ -16,6 +16,7 @@ class PostCell: UITableViewCell {
     @IBOutlet weak var likesLabel: UILabel!
     @IBOutlet weak var profileImg: CircleView!
     @IBOutlet weak var usernameLabel: UILabel!
+    @IBOutlet weak var date: UILabel!
     
     var post : Post!
     
@@ -28,6 +29,7 @@ class PostCell: UITableViewCell {
         self.post = post
         self.caption.text = post.caption
         self.likesLabel.text = "\(post.likes)"
+//        self.date.text = "\(post.date)"
         
         // Check if image is stored, download it if not
         if img != nil {

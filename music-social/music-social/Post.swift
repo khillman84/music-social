@@ -13,6 +13,7 @@ class Post {
     private var _imageUrl: String!
     private var _likes: Int!
     private var _postKey: String!
+    private var _date : String!
     
     var caption: String {
         return _caption
@@ -28,6 +29,10 @@ class Post {
     
     var postKey: String {
         return _postKey
+    }
+    
+    var date: String {
+        return _date
     }
     
     init(caption: String, imageUrl: String, likes: Int) {
@@ -49,6 +54,10 @@ class Post {
         
         if let likes = postData["likes"] as? Int {
             self._likes = likes
+        }
+        
+        if let date = postData["date"] as? String {
+            self._date = date
         }
     }
 }
