@@ -320,6 +320,7 @@
                                         <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="caption" destination="7WZ-6y-uOe" id="I5s-m9-Ahy"/>
+                                            <outlet property="likeImg" destination="rOi-H1-Aeg" id="fX5-Tg-Esq"/>
                                             <outlet property="likesLabel" destination="cU3-Fb-aIO" id="h7Z-sH-dmb"/>
                                             <outlet property="postImg" destination="TFX-RL-Rjn" id="pAy-9u-wgI"/>
                                             <outlet property="profileImg" destination="fRi-jy-rq6" id="SnE-0h-Rxh"/>

@@ -8,6 +8,7 @@
 
 import Foundation
 import Firebase
+import SwiftKeychainWrapper
 
 // Store the Firebase reference URL stored in the GoogleService-Info.plist
 let gDataBase = FIRDatabase.database().reference()
@@ -44,6 +45,12 @@ class DataService {
     
     var ref_profile_images: FIRStorageReference {
         return _ref_profile_images
+    }
+    
+    var ref_user_current: FIRDatabaseReference {
+        let uid = KeychainWrapper.standard.string(forKey: gKeyUID)
+        let user = ref_users.child(uid!)
+        return user
     }
     
     func createFirebaseDBUser(uid: String, userData: Dictionary<String, String>) {
