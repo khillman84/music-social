@@ -35,7 +35,6 @@ class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDe
         DataService.dataService.ref_posts.observe(.value, with: { (snapshot) in
             if let snapshot = snapshot.children.allObjects as? [FIRDataSnapshot] {
                 for snap in snapshot {
-                    print("SNAP: \(snap)")
                     if let postDict = snap.value as? Dictionary<String, Any> {
                         let key = snap.key
                         let post = Post(postKey: key, postData: postDict)
@@ -94,9 +93,30 @@ class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDe
                 } else {
                     print ("Successfully loaded image to Firebase storage")
                     let downloadURL = metaData?.downloadURL()?.absoluteString
+                    if let url = downloadURL {
+                        self.postToFirebase(imgUrl: url)
+                    }
                 }
             }
         }
+    }
+    
+    func postToFirebase(imgUrl: String) {
+        let post: Dictionary<String, Any> = [
+            "caption" : captionField.text ?? "",
+            "imageUrl": imgUrl,
+            "likes"   : 0,
+            "date"    : "\(Date())"
+        ]
+        
+        let firebasePost = DataService.dataService.ref_posts.childByAutoId()
+        firebasePost.setValue(post)
+        
+        captionField.text = ""
+        imageSelected = false
+        imageAdd.image = UIImage(named: "add-image")
+        
+        tableView.reloadData()
     }
 }
 
@@ -115,6 +135,8 @@ extension FeedViewController {
         let post = posts[indexPath.row]
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as? PostCell {
+            
+            posts.sort(by: {$0.date > $1.date})
             
             // Grab the image from the cache or download them from Firebase
             if let img = FeedViewController.imageCache.object(forKey: post.imageUrl as NSString) {
