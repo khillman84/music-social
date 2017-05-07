@@ -14,10 +14,12 @@ class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var imageAdd: CircleView!
+    @IBOutlet weak var captionField: FancyTextField!
 
     var posts = [Post]()
     var imagePicker: UIImagePickerController!
     static var imageCache: NSCache<NSString, UIImage> = NSCache()
+    var imageSelected = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,6 +50,7 @@ class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
             imageAdd.image = image
+            imageSelected = true
         } else {
             print("A valid image was not selected")
         }
@@ -68,6 +71,33 @@ class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDe
         present(imagePicker, animated: true, completion: nil)
     }
     
+    @IBAction func postButtonPressed(_ sender: Any) {
+        guard let caption = captionField.text, caption != "" else {
+            print ("Caption must be entered")
+            return
+        }
+        guard let img = imageAdd.image, imageSelected == true else {
+            print ("Image must be added")
+            return
+        }
+        
+        // Uploading data to Firebase
+        if let imgData = UIImageJPEGRepresentation(img, 0.2) {
+            
+            let imgUid = NSUUID().uuidString
+            let metaData = FIRStorageMetadata()
+            metaData.contentType = "image/jpeg"
+            
+            DataService.dataService.ref_post_images.child(imgUid).put(imgData, metadata: metaData) { (metaData, error) in
+                if error != nil {
+                    print ("Unable to upload image to Firebase storage")
+                } else {
+                    print ("Successfully loaded image to Firebase storage")
+                    let downloadURL = metaData?.downloadURL()?.absoluteString
+                }
+            }
+        }
+    }
 }
 
 extension FeedViewController {
@@ -86,6 +116,7 @@ extension FeedViewController {
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as? PostCell {
             
+            // Grab the image from the cache or download them from Firebase
             if let img = FeedViewController.imageCache.object(forKey: post.imageUrl as NSString) {
                 cell.configureCell(post: post, img: img)
                 return cell
