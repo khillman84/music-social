@@ -33,6 +33,9 @@ class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDe
        
         // Retrieve data from Firebase database
         DataService.dataService.ref_posts.observe(.value, with: { (snapshot) in
+            
+            self.posts = [] //reset view so no duplicates show up
+            
             if let snapshot = snapshot.children.allObjects as? [FIRDataSnapshot] {
                 for snap in snapshot {
                     if let postDict = snap.value as? Dictionary<String, Any> {
@@ -141,11 +144,10 @@ extension FeedViewController {
             // Grab the image from the cache or download them from Firebase
             if let img = FeedViewController.imageCache.object(forKey: post.imageUrl as NSString) {
                 cell.configureCell(post: post, img: img)
-                return cell
             } else {
                 cell.configureCell(post: post)
-                return cell
             }
+            return cell
         } else {
             return PostCell()
         }
